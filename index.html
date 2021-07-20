@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Horses with Human Hands</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      let imgs = [
+        {
+          url: "https://fineartamerica.com/featured/horse-with-human-hands-and-feet-betsy-knapp.html",
+          local: "betsy-knapp.jpg"
+        },
+        {
+          url: "https://braymere.blogspot.com/2019/07/clever-hands.html",
+          local: "braymere.jpg"
+        },
+        {
+          url: "https://braymere.blogspot.com/2019/07/clever-hands.html",
+          local: "braymere2.jpg"
+        },
+        {
+          url: "https://braymere.blogspot.com/2019/07/clever-hands.html",
+          local: "braymere3.jpg"
+        },
+        {
+          url: "https://www.deviantart.com/david2draw/art/Horse-With-Human-Hands-117243020",
+          local: "david2draw.jpg"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2014/10/darren-cezanne.html",
+          local: "darren-cezanne.jpg"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2012/02/ellen-marcus.html",
+          local: "ellen-marcus.jpg"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2011/11/jessica-oliveira.html",
+          local: "jessica-oliveira.jpg"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2011/04/elisa-kortela.html",
+          local: "elisa-kortela.png"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2011/03/johanna-de-mornay-davies.html",
+          local: "johanna-de-mornay-davies.jpg"
+        },
+        {
+          url: "https://horsewithhandsridingabike.blogspot.com/2011/03/geraint.html",
+          local: "geraint.jpg"
+        },
+        {
+          url: "https://drawception.com/panel/drawing/z04E6336/a-horse-with-hands-instead-of-hooves-handtail/",
+          local: "iswearitwasthedragon.png"
+        },
+        {
+          url: "https://drawception.com/panel/drawing/0G4E6336/horse-with-hands-instead-of-hoofs/",
+          local: "febzy.png"
+        },
+        {
+          url: "https://drawception.com/panel/drawing/kT4E6336/horse-with-hands-instead-of-hooves/",
+          local: "nyan-wulf.png"
+        },
+        {
+          url: "https://drawception.com/panel/drawing/1w8E6336/horse-has-humans-arms-and-is-shocked/",
+          local: "tamanduá.png"
+        },
+        {
+          url: "https://ifunny.co/meme/horse-with-human-hands-fan-art-horse-with-human-hands-BpNMWNru7",
+          local: "omnipotent.jpg"
+        },
+        {
+          url: "https://www.deviantart.com/reattached-kite/art/Horse-with-Human-Hands-854983322",
+          local: "reattached-kite.jpg"
+        }
+      ]
+
+      let index = Math.floor(Math.random() * imgs.length);
+      let img = imgs[index];
+        
+      $('div').css("background-image", 'url("img/' + img.local +'")');
+      $('a').attr("href", img.url);
+    });
+  </script>
+  <style type="text/css">
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">
+    <div></div>
+  </a>
+</body>
+</html>
